@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Nike;
+    src:  url(../tipografia/futuraCondensedExtraBold.otf );
+}
+
+@font-face {
+    font-family: Letraanimada;
+    src: url(../tipografia/organicRelief.ttf);
+}
+
+/* config index */
+
+.body1{
+    background-color: #141F66;
+}
+
+.div1{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 10cm, auto, 10cm;
+    align-content: stretch;
+    border: 2cm, double, rgb(253, 0, 42);
+}
+
+header{
+    grid-area: header;
+    font-family: Nike;
+    background-color: #141F66;
+    height: 4cm;
+    text-align: center;
+    padding: auto;
+    margin-left: 3cm;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    color: rgb(70, 42, 226);
+    text-decoration:none;
+    font-size: 1cm;
+}
+
+header img{
+    width: 250px;
+    height: 150px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+.main1{
+    grid-area: main;
+    background-image:url( https://cdn.create.vista.com/api/media/medium/198498184/stock-photo-pink-purple-smoke-abstract-black?token=);
+    background-repeat: none;
+    background-size: cover;
+} 
+
+.titulodeimagen{
+    color: #03006B;
+    font-weight: bold;
+}
+
+/*img{
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+    border-width: 10px;
+}*/
+
+img{
+    margin-bottom: 2cm;
+    margin-left: 14px;
+}
+
+.tituloindex{
+    font-family: Letraanimada;
+    color: #03006B;
+    padding: 20px 20px 20px 20px;
+    border: 5px double white;
+    margin: 10px 15cm 10px 15cm;
+    text-align: center;
+
+}
+
+footer{
+    grid-area: footer;
+    color: white;
+    background-color: #141F66;
+    font-family: Nike;
+    height: 2cm;
+    text-align: center;
+}
+
+footer div{
+    margin: 1cm 2cm 1cm 3cm;
+    display: inline-block;
+}
+
+#id{
+    color: white;
+    font-family: Letraanimada;
+}
+
+
+/* config de Contacto*/
+
+body{
+    background-color: #141F66;
+}
+
+.maincontacto{
+    background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.cuadrado{
+    margin: 1cm 5cm 1cm 5cm;
+    display: block;
+    width: 300px;
+    height: 500px;
+    background-color: gray;
+    justify-content: center;
+}
+
+/* config de productos*/
+
+.mainproductos{
+    background-image:url( https://cdn.create.vista.com/api/media/medium/198499840/stock-photo-creative-black-background-purple-smoke?token=);
+    background-repeat: none;
+    background-size: cover;
+    height: 30cm;
+    width: 42cm;
+}
+
+/* config de nosotros*/
+
+.mainnosotros{
+    background-image:url( https://conteudo.imguol.com.br/c/esporte/cf/2022/01/17/sede-global-da-nike-em-beaverton-em-oregon-nos-estados-unidos-1642455392796_v2_4x3.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 30cm;
+    width: 42cm;
+}
+
+/* config de unete a nosotros*/
+
+.mainunete{
+    background-image:url( https://resourcepacks24.de/storage/screenshots/461430-91163bac-be3d-45f9-a177-560fcec7f150.jpg);
+    background-repeat: none;
+    background-size: cover;
+    height: 30cm;
+    width: 42cm;
+}
