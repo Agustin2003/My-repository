@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Novedade Nike</title>
-    <link rel="stylesheet" href="./estilos/style.css">
     <link rel="shortcut icon" href="./img/png-transparent-nike-logo-nike-nikesb-sports-brand-logo-thumbnail.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./estilos/style.css">
 </head>
 
 <body class="body1">
 
-    <div class="div1">
+    <div class="grilla">
 
+        <header data-aos="fade-right">
 
-        <header>
+            <div class="icono_index">
+                <a href="./index.html">><img src="./img/logo de pagina.png" alt="Logo Nike" ></a>
+            </div>
+            
             <nav>
                 
                 <ul>
@@ -27,32 +33,30 @@
                 
             </nav>
     
-            <div>
-                <a href="./index.html">><img src="./img/logo de pagina.png" alt="Logo Nike" ></a>
-            </div>
-    
         </header>
 
     
         <main class="main1">
-            <section>
+            <section  data-aos="fade-up"
+            data-aos-duration="3000">>
     
                 <h1 class="tituloindex">NOVEDADES!</h1>
     
             </section>
     
-            <section>                             
+            <section  data-aos="zoom-in-up">                             
                 <figure>                     
                     <img  src="./img/index 1.png" alt="">                                     
                 </figure>
                 <figure>                     
                     <img  src="./img/index 2.png" alt="">                                     
-                </figure>                                     
+                </figure> 
+            </section>                                    
                 
         </main>
         
     
-        <footer>
+        <footer >
             <div>
                 <h3 id="id">AYUDA</h3>
                 <h4>Instagram</h4>
@@ -80,6 +84,10 @@
         </footer>
 
     </div>
+
+    <script>
+        AOS.init();
+      </script>
     
 </body>
 </html>
