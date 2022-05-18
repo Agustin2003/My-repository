@@ -19,47 +19,61 @@
     background-color: #141F66;
 }
 
-.div1{
+.grilla{
     display: grid;
     grid-template-areas:
         "header"
         "main"
         "footer";
-    grid-template-rows: 10cm, auto, 10cm;
-    align-content: stretch;
-    border: 2cm, double, rgb(253, 0, 42);
 }
 
 header{
     grid-area: header;
+    display: flex;
+    flex-direction: row;
     font-family: Nike;
-    background-color: #141F66;
+    background-color: #000000;
     height: 4cm;
     text-align: center;
-    padding: auto;
-    margin-left: 3cm;
+    width: 1489px;
 }
 
-nav ul li{
+.navbar{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.navbar .container-fluid{
+    margin-left: 350px;
+}
+
+.navbar ul li{
+    grid-area: header;
+    display: flex;
     list-style-type: none;
     display: inline-block;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-right: 30px;
+    margin-left: 0%;
 }
 
-nav ul li a{
-    color: rgb(70, 42, 226);
+.navbar ul li a{
+    grid-area: header;
+    color: white;
     text-decoration:none;
     font-size: 1cm;
 }
 
-header img{
-    width: 250px;
-    height: 150px;
-    position: fixed;
-    left: 10px;
-    top: 10px;
+header div img{
+    grid-area: header;
+    height: 170px;
+    width: 200px;
 }
 
 .main1{
@@ -67,6 +81,7 @@ header img{
     background-image:url( https://cdn.create.vista.com/api/media/medium/198498184/stock-photo-pink-purple-smoke-abstract-black?token=);
     background-repeat: none;
     background-size: cover;
+    width: 1489px;
 } 
 
 .titulodeimagen{
@@ -74,34 +89,28 @@ header img{
     font-weight: bold;
 }
 
-/*img{
-    border-style: double;
-    border-color: rgb(0, 0, 0);
-    border-width: 10px;
-}*/
-
-img{
-    margin-bottom: 2cm;
-    margin-left: 14px;
-}
-
 .tituloindex{
     font-family: Letraanimada;
-    color: #03006B;
-    padding: 20px 20px 20px 20px;
-    border: 5px double white;
-    margin: 10px 15cm 10px 15cm;
+    color: white;
+    padding: 20px 13px 20px 13px;
+    border: 10px double white;
+    margin: 10px 13cm 10px 13cm;
     text-align: center;
 
+}
+
+.tituloindex:hover{
+    transform: rotate(90deg) translate(0px, 0px);
 }
 
 footer{
     grid-area: footer;
-    color: white;
-    background-color: #141F66;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
     font-family: Nike;
-    height: 2cm;
     text-align: center;
+    width: 1489px;
+    height: 6cm;
 }
 
 footer div{
@@ -114,6 +123,65 @@ footer div{
     font-family: Letraanimada;
 }
 
+@media screen and (min-width: 767px){
+
+    header{
+        background-color: white;
+    }
+    nav ul li a{
+        color: rgb(0, 0, 0);
+    }
+
+    footer{
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+
+    #id{
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    header{
+        background-color: rgb(255, 0, 0);
+    }
+    nav ul li a{
+        color: rgb(234, 255, 0);
+    }
+
+    footer{
+        background-color: rgb(255, 0, 0);
+        color: rgb(234, 255, 0);
+    }
+
+    #id{
+        color: rgb(234, 255, 0);
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    header{
+        background-color: rgb(0, 0, 0);
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+    }
+
+    footer{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+
+    #id{
+        color: rgb(255, 255, 255);
+    }
+
+}
 
 /* config de Contacto*/
 
@@ -121,13 +189,58 @@ body{
     background-color: #141F66;
 }
 
+.grilla_contacto{
+    display: grid;
+    grid-template-areas: 
+        "header_contacto" 
+        "contactanos_contacto" 
+        "footer_contacto";
+}
+
+.header_contactanos{
+    grid-area: header_contacto;
+    display: flex;
+    flex-direction: row;
+    font-family: Nike;
+    background-color: #000000;
+    height: 4cm;
+    text-align: center;
+    padding: auto;
+    width: 1489px;
+}
+
+.header_contactanos nav ul li{
+    grid-area: header_contacto;
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.header_contactanos nav ul li a{
+    grid-area: header_contacto;
+    color: white;
+    text-decoration:none;
+    font-size: 1cm;
+}
+
+.header_contactanos img{
+    grid-area: header_contacto;
+    height: 170px;
+    width: 200px;
+}
+
 .maincontacto{
+    grid-area: contactanos_contacto;
     background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
     background-repeat: none;
     background-size: cover;
+    width: 1489px;
 }
 
 .cuadrado{
+    grid-area: contactanos_contacto;
     margin: 1cm 5cm 1cm 5cm;
     display: block;
     width: 300px;
@@ -136,32 +249,448 @@ body{
     justify-content: center;
 }
 
+.cuadrado:hover{
+    transform: rotate(90deg) translate(0px, 0px);
+}
+
+.footer_contacto{
+    grid-area: footer_contacto;
+    color: white;
+    background-color: #000000;
+    font-family: Nike;
+    text-align: center;
+    height: 6cm;
+    width: 1489px;
+}
+
+.footer_contacto div{
+    margin: 1cm 2cm 1cm 3cm;
+    display: inline-block;
+}
+
+@media screen and (min-width: 767px){
+
+    .header_contactanos{
+        background-color: #ffffff;
+    }
+
+    .header_contactanos nav ul li a{
+        color: rgb(0, 0, 0);
+    }
+
+    .footer_contacto{
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .header_contactanos{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .header_contactanos nav ul li a{
+        color: rgb(234, 255, 0);
+    }
+
+    .footer_contacto{
+        background-color: rgb(255, 0, 0);
+        color: rgb(234, 255, 0);
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .header_contactanos{
+        background-color: #000000;
+    }
+
+    .header_contactanos nav ul li a{
+        color: rgb(255, 255, 255);
+    }
+
+    .footer_contacto{
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+    }
+}
+
 /* config de productos*/
 
-.mainproductos{
+.grilla_productos{
+    display: grid;
+    grid-template-areas: 
+    "header_productos"  
+    "ropa1_productos"  
+    "footer_productos" ;
+}
+
+.header_productos{
+    grid-area: header_productos;
+    font-family: Nike;
+    background-color: #000000;
+    height: 4cm;
+    text-align: center;
+    padding: auto;
+    width: 1489px;
+}
+
+.header_productos nav ul li{
+    grid-area: header_productos;
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.header_productos nav ul li a{
+    grid-area: header_productos;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    font-size: 1cm;
+}
+
+.productos_productos{
+    grid-area: ropa1_productos;
+    display: flex;
+    flex-direction: column;
     background-image:url( https://cdn.create.vista.com/api/media/medium/198499840/stock-photo-creative-black-background-purple-smoke?token=);
     background-repeat: none;
     background-size: cover;
-    height: 30cm;
-    width: 42cm;
+    height: 1150px;
+    width: 1400px;
+}
+
+.titulo_ropa{
+    grid-area: ropa1_productos;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2cm;
+    height: 3cm;
+}
+
+.h1_ropa{
+    height: 2cm;
+    width: 4cm;
+    justify-content: center;
+    align-items: center;
+    font-family: Letraanimada;
+    color: white;
+}
+
+.section_productos{
+    margin-top: 2cm;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ropa1{
+    grid-area: ropa1_productos;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1cm 2cm 1cm 2cm;
+    display: block;
+    width: 250px;
+    height: 375px;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer_productos{
+    grid-area: footer_productos;
+    color: white;
+    background-color: #000000;
+    font-family: Nike;
+    text-align: center;
+    width: 1489px;
+    height: 6cm;
+}
+
+.footer_productos div{
+    grid-area: footer_productos;
+    margin: 1cm 2cm 1cm 3cm;
+    display: inline-block;
+}
+
+@media screen and (min-width: 767px){
+
+    .header_productos{
+        background-color: #ffffff;
+    }
+
+    .header_productos nav ul li a{
+        color: rgb(0, 0, 0);
+    }
+
+    .footer_productos{
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+    .header_productos{
+        background-color: rgb(255, 0, 0);;
+    }
+
+    .header_productos nav ul li a{
+        color: rgb(234, 255, 0);
+    }
+
+    .footer_productos{
+        background-color: rgb(255, 0, 0);
+        color: rgb(234, 255, 0);
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .header_productos{
+        background-color: #000000;
+    }
+
+    .header_productos nav ul li a{
+        color: rgb(255, 255, 255);
+    }
+
+    .footer_productos{
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+    }
+
 }
 
 /* config de nosotros*/
 
-.mainnosotros{
+.grilla_nosotros{
+    display: grid;
+    grid-template-areas:
+        "header_nosotros"
+        "nosotros_nosotros"
+        "footer_nosotros";
+}
+
+.header_nosotros{
+    grid-area: header_nosotros;
+    font-family: Nike;
+    background-color: #000000;
+    height: 4cm;
+    text-align: center;
+    padding: auto;
+    width: 1489px;
+}
+
+.header_nosotros nav ul li{
+    grid-area: header_nosotros;
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.header_nosotros nav ul li a{
+    grid-area: header_nosotros;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    font-size: 1cm;
+}
+
+.header_nosotros img{
+    grid-area: header_nosotros;
+    height: 170px;
+    width: 200px;
+}
+
+.nosotros_nosotros{
+    grid-area: nosotros_nosotros;
     background-image:url( https://conteudo.imguol.com.br/c/esporte/cf/2022/01/17/sede-global-da-nike-em-beaverton-em-oregon-nos-estados-unidos-1642455392796_v2_4x3.jpg);
     background-repeat: none;
     background-size: cover;
     height: 30cm;
-    width: 42cm;
+    width: 1489px;
+}
+
+.footer_nosotros{
+    grid-area: footer_nosotros;
+    color: white;
+    background-color: #000000;
+    font-family: Nike;
+    text-align: center;
+    width: 1489px;
+    height: 6cm;
+}
+
+.footer_nosotros div{
+    margin: 1cm 2cm 1cm 3cm;
+    display: inline-block;
+}
+
+@media screen and (min-width: 767px){
+
+    .header_nosotros{
+        background-color: #ffffff;
+    }
+
+    .header_nosotros nav ul li a{
+        color: rgb(0, 0, 0);
+    }
+
+    .footer_nosotros{
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .header_nosotros{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .header_nosotros nav ul li a{
+        color: rgb(234, 255, 0);
+    }
+
+    .footer_nosotros{
+        background-color: rgb(255, 0, 0);
+        color: rgb(234, 255, 0);
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .header_nosotros{
+        background-color: #000000;
+    }
+
+    .header_nosotros nav ul li a{
+        color: rgb(255, 255, 255);
+    }
+
+    .footer_nosotros{
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+    }
 }
 
 /* config de unete a nosotros*/
 
-.mainunete{
+.grilla_unete{
+    display: grid;
+    grid-template-areas: 
+        "header_unete"
+        "unete_unete"
+        "footer_unete";
+}
+
+.header_unete{
+    grid-area: header_unete;
+    font-family: Nike;
+    background-color: #000000;
+    height: 4cm;
+    text-align: center;
+    padding: auto;
+    width: 1489px;
+}
+
+.header_unete nav ul li{
+    grid-area: header_unete;
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.header_unete nav ul li a{
+    grid-area: header_unete;
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+    font-size: 1cm;
+}
+
+.header_unete img{
+    grid-area: header_unete;
+    height: 170px;
+    width: 200px;
+}
+
+.unete_unete{
+    grid-area: unete_unete;
     background-image:url( https://resourcepacks24.de/storage/screenshots/461430-91163bac-be3d-45f9-a177-560fcec7f150.jpg);
     background-repeat: none;
     background-size: cover;
     height: 30cm;
-    width: 42cm;
+    width: 1489px;
+}
+
+.footer_unete{
+    grid-area: footer_unete;
+    color: white;
+    background-color: #000000;
+    font-family: Nike;
+    text-align: center;
+    width: 1489px;
+    height: 6cm;
+}
+
+.footer_unete div{
+    margin: 1cm 2cm 1cm 3cm;
+    display: inline-block;
+}
+
+@media screen and (min-width: 767px){
+
+    .header_unete{
+        background-color: #ffffff;
+    }
+
+    .header_unete nav ul li a{
+        color: rgb(0, 0, 0);
+    }
+
+    .footer_unete{
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 628px){
+
+    .header_unete{
+        background-color: rgb(255, 0, 0);
+    }
+
+    .header_unete nav ul li a{
+        color: rgb(234, 255, 0);
+    }
+
+    .footer_unete{
+        background-color: rgb(255, 0, 0);
+        color: rgb(234, 255, 0);
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .header_unete{
+        background-color: #000000;
+    }
+
+    .header_unete nav ul li a{
+        color: rgb(255, 255, 255);
+    }
+
+    .footer_unete{
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+    }
 }
