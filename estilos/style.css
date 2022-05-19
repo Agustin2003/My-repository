@@ -36,6 +36,7 @@ header{
     height: 4cm;
     text-align: center;
     width: 1489px;
+<<<<<<< HEAD
 }
 
 nav{
@@ -48,6 +49,25 @@ nav{
 }
 
 nav ul li{
+=======
+}
+
+.navbar{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.navbar .container-fluid{
+    margin-left: 350px;
+}
+
+.navbar ul li{
+>>>>>>> master
     grid-area: header;
     display: flex;
     list-style-type: none;
@@ -55,9 +75,14 @@ nav ul li{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-right: 30px;
+    margin-left: 0%;
 }
 
+<<<<<<< HEAD
 nav ul li a{
+=======
+.navbar ul li a{
+>>>>>>> master
     grid-area: header;
     color: white;
     text-decoration:none;
@@ -86,9 +111,15 @@ header div img{
 .tituloindex{
     font-family: Letraanimada;
     color: white;
+<<<<<<< HEAD
     padding: 20px 20px 20px 20px;
     border: 5px double white;
     margin: 10px 15cm 10px 15cm;
+=======
+    padding: 20px 13px 20px 13px;
+    border: 10px double white;
+    margin: 10px 13cm 10px 13cm;
+>>>>>>> master
     text-align: center;
 
 }
