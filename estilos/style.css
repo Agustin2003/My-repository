@@ -16,7 +16,7 @@
 /* config index */
 
 .body1{
-    background-color: #141F66;
+    background-color: black;
 }
 
 .grilla{
@@ -33,7 +33,7 @@ header{
     flex-direction: row;
     font-family: Nike;
     background-color: #000000;
-    height: 4cm;
+    height: 170px;
     text-align: center;
     width: 1489px;
 }
@@ -63,11 +63,19 @@ header{
     margin-left: 0%;
 }
 
+.navbar ul li:hover{
+    transform: scale(130%);
+}
+
 .navbar ul li a{
     grid-area: header;
     color: white;
     text-decoration:none;
     font-size: 1cm;
+}
+
+.navbar ul li a:hover{
+    color: rgb(33, 27, 203);
 }
 
 header div img{
@@ -99,10 +107,6 @@ header div img{
 
 }
 
-.tituloindex:hover{
-    transform: rotate(90deg) translate(0px, 0px);
-}
-
 footer{
     grid-area: footer;
     color: rgb(255, 255, 255);
@@ -114,7 +118,7 @@ footer{
 }
 
 footer div{
-    margin: 1cm 2cm 1cm 3cm;
+    margin: 1cm 1cm 1cm 2cm;
     display: inline-block;
 }
 
@@ -186,7 +190,7 @@ footer div{
 /* config de Contacto*/
 
 body{
-    background-color: #141F66;
+    background-color: black;
 }
 
 .grilla_contacto{
@@ -203,7 +207,7 @@ body{
     flex-direction: row;
     font-family: Nike;
     background-color: #000000;
-    height: 4cm;
+    height: 170px;
     text-align: center;
     padding: auto;
     width: 1489px;
@@ -218,11 +222,19 @@ body{
     margin-right: 30px;
 }
 
+.header_contactanos nav ul li:hover{
+    transform: scale(130%);
+}
+
 .header_contactanos nav ul li a{
     grid-area: header_contacto;
     color: white;
     text-decoration:none;
     font-size: 1cm;
+}
+
+.header_contactanos ul li a:hover{
+    color: rgb(33, 27, 203);
 }
 
 .header_contactanos img{
@@ -234,23 +246,43 @@ body{
 .maincontacto{
     grid-area: contactanos_contacto;
     background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
-    background-repeat: none;
     background-size: cover;
     width: 1489px;
+    height: 1000px;
 }
 
 .cuadrado{
     grid-area: contactanos_contacto;
-    margin: 1cm 5cm 1cm 5cm;
-    display: block;
-    width: 300px;
+    width: 310px;
     height: 500px;
-    background-color: gray;
+    background: radial-gradient(
+        500% 170% at 50% 93%,
+        rgba(0, 0, 0, 1) 12%,
+        rgb(46, 46, 46) 24%
+      );
     justify-content: center;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 600px;
 }
 
 .cuadrado:hover{
-    transform: rotate(90deg) translate(0px, 0px);
+    transform: scale(130%)
+}
+
+.section_contacto{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.section_contacto .h1_contacto{
+    border: 2px dashed white;
+    padding-left: 25px;
+    color: white;
+
 }
 
 .footer_contacto{
@@ -264,7 +296,7 @@ body{
 }
 
 .footer_contacto div{
-    margin: 1cm 2cm 1cm 3cm;
+    margin: 1cm 1cm 1cm 2cm;
     display: inline-block;
 }
 
@@ -330,7 +362,7 @@ body{
     grid-area: header_productos;
     font-family: Nike;
     background-color: #000000;
-    height: 4cm;
+    height: 170px;
     text-align: center;
     padding: auto;
     width: 1489px;
@@ -345,11 +377,20 @@ body{
     margin-right: 30px;
 }
 
+.header_productos nav ul li:hover{
+    transform: scale(130%);
+    color: rgb(33, 27, 203);
+}
+
 .header_productos nav ul li a{
     grid-area: header_productos;
     color: rgb(255, 255, 255);
     text-decoration:none;
     font-size: 1cm;
+}
+
+.header_productos nav ul li a:hover{
+    color: rgb(33, 27, 203);
 }
 
 .productos_productos{
@@ -360,7 +401,7 @@ body{
     background-repeat: none;
     background-size: cover;
     height: 1150px;
-    width: 1400px;
+    width: 1489px;
 }
 
 .titulo_ropa{
@@ -369,16 +410,16 @@ body{
     align-content: center;
     justify-content: center;
     margin-top: 2cm;
-    height: 3cm;
+    height: 2cm;
 }
 
 .h1_ropa{
-    height: 2cm;
-    width: 4cm;
+    height: 4cm;
+    width: 20cm;
     justify-content: center;
     align-items: center;
     font-family: Letraanimada;
-    color: white;
+    color: rgb(137, 21, 253);
 }
 
 .section_productos{
@@ -400,6 +441,10 @@ body{
     background-color: rgb(0, 0, 0);
 }
 
+.ropa1:hover{
+    transform: scale(130%);
+}
+
 .footer_productos{
     grid-area: footer_productos;
     color: white;
@@ -412,7 +457,7 @@ body{
 
 .footer_productos div{
     grid-area: footer_productos;
-    margin: 1cm 2cm 1cm 3cm;
+    margin: 1cm 1cm 1cm 2cm;
     display: inline-block;
 }
 
@@ -481,7 +526,7 @@ body{
     grid-area: header_nosotros;
     font-family: Nike;
     background-color: #000000;
-    height: 4cm;
+    height: 170px;
     text-align: center;
     padding: auto;
     width: 1489px;
@@ -496,11 +541,19 @@ body{
     margin-right: 30px;
 }
 
+.header_nosotros nav ul li:hover{
+    transform: scale(130%);
+}
+
 .header_nosotros nav ul li a{
     grid-area: header_nosotros;
     color: rgb(255, 255, 255);
     text-decoration:none;
     font-size: 1cm;
+}
+
+.header_nosotros nav ul li a:hover{
+    color: rgb(33, 27, 203);
 }
 
 .header_nosotros img{
@@ -529,7 +582,7 @@ body{
 }
 
 .footer_nosotros div{
-    margin: 1cm 2cm 1cm 3cm;
+    margin: 1cm 1cm 1cm 2cm;
     display: inline-block;
 }
 
@@ -595,7 +648,7 @@ body{
     grid-area: header_unete;
     font-family: Nike;
     background-color: #000000;
-    height: 4cm;
+    height: 170px;
     text-align: center;
     padding: auto;
     width: 1489px;
@@ -610,11 +663,19 @@ body{
     margin-right: 30px;
 }
 
+.header_unete nav ul li:hover{
+    transform: scale(130%);
+}
+
 .header_unete nav ul li a{
     grid-area: header_unete;
     color: rgb(255, 255, 255);
     text-decoration:none;
     font-size: 1cm;
+}
+
+.header_unete nav ul li a:hover{
+    color: rgb(33, 27, 203);
 }
 
 .header_unete img{
@@ -643,7 +704,7 @@ body{
 }
 
 .footer_unete div{
-    margin: 1cm 2cm 1cm 3cm;
+    margin: 1cm 1cm 1cm 2cm;
     display: inline-block;
 }
 
