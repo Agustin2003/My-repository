@@ -115,6 +115,12 @@ footer{
     text-align: center;
     width: 1489px;
     height: 6cm;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
 }
 
 footer div{
@@ -293,6 +299,12 @@ body{
     text-align: center;
     height: 6cm;
     width: 1489px;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
 }
 
 .footer_contacto div{
@@ -453,6 +465,12 @@ body{
     text-align: center;
     width: 1489px;
     height: 6cm;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
 }
 
 .footer_productos div{
@@ -579,6 +597,12 @@ body{
     text-align: center;
     width: 1489px;
     height: 6cm;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgba(128, 0, 247, 1) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
 }
 
 .footer_nosotros div{
@@ -701,6 +725,12 @@ body{
     text-align: center;
     width: 1489px;
     height: 6cm;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgba(128, 0, 247, 1) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
 }
 
 .footer_unete div{
