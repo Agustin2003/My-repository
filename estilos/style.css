@@ -273,10 +273,6 @@ body{
     left: 600px;
 }
 
-.cuadrado:hover{
-    transform: scale(130%)
-}
-
 .section_contacto{
     margin-left: 20px;
     margin-right: 20px;
