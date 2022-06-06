@@ -20,5 +20,12 @@ $colorbg: grey;
     color: $colorbg;
 }
 
+@mixin fontstyle($color) {
+    color: blue;
+    background-color: $color;
+}
 
+.tituloindex {
+    @include fontstyle(grey);
+}
 
