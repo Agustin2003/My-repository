@@ -1,5 +1,14 @@
 $colorbg: grey;
 
+$thumbnail-border-color: rgb(122, 27, 255);
+$thumbnail-border-width: 10px;
+
+.img-thumbnail{
+    border-color: $thumbnail-border-color;
+    border-width: $thumbnail-border-width;
+    margin-top: 20px;
+}
+
 .navbar ul li a:hover{
     color: $colorbg;
 }
@@ -28,4 +37,5 @@ $colorbg: grey;
 .tituloindex {
     @include fontstyle(grey);
 }
+
 

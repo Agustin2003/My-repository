@@ -1,3 +1,9 @@
+.img-thumbnail {
+  border-color: #7a1bff;
+  border-width: 10px;
+  margin-top: 20px;
+}
+
 .navbar ul li a:hover {
   color: grey;
 }
