@@ -4,28 +4,17 @@
   margin-top: 20px;
 }
 
-.navbar ul li a:hover {
-  color: grey;
-}
-
-.header_contactanos nav ul li a:hover {
-  color: grey;
-}
-
-.header_productos nav ul li a:hover {
-  color: grey;
-}
-
-.header_nosotros nav ul li a:hover {
-  color: grey;
-}
-
-.header_unete nav ul li a:hover {
-  color: grey;
-}
-
 .tituloindex {
   color: blue;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0);
+}
+
+.card {
+  background-color: black;
+}
+
+.card-contenedor {
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 /*# sourceMappingURL=style.css.map */

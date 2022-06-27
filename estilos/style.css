@@ -27,18 +27,6 @@
         "footer";
 }
 
-header{
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    font-family: Nike;
-    background-color: #000000;
-    text-align: center;
-}
-
-.nav-link active{
-    color: white;
-}
 
 .main1{
     grid-area: main;
@@ -47,7 +35,6 @@ header{
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    width: 1250px;
 } 
 
 .titulodeimagen{
@@ -58,7 +45,7 @@ header{
 .tituloindex{
     font-family: Letraanimada;
     color: white;
-    border: 10px double white;
+
 }
 
 footer{
@@ -66,19 +53,24 @@ footer{
     color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    width: 1250px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
         rgb(137, 21, 253) 12%,
         rgb(0, 0, 0) 24%
       );
+      transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 footer div{
+    justify-content: center;
     text-align: center;
     margin: 10px 10px 10px 15px;
     display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
 }
 
 #id{
@@ -111,11 +103,25 @@ footer div{
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-
+    footer div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 90px;
+    }
 }
 
 @media screen and (min-width: 1024px){
-
+    footer div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 150px;
+    }
 }
 
 /* config de Contacto*/
@@ -132,16 +138,6 @@ body{
         "footer_contacto";
 }
 
-.header_contactanos{
-    grid-area: header_contacto;
-    display: flex;
-    flex-direction: row;
-    font-family: Nike;
-    background-color: #000000;
-    text-align: center;
-    padding: auto;
-}
-
 .maincontacto{
     grid-area: contactanos_contacto;
     background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
@@ -149,7 +145,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    width: 1250px;
+    width: 1550px;
     height: 700px;
 }
 
@@ -188,7 +184,6 @@ body{
     color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    width: 1250px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
@@ -249,15 +244,6 @@ body{
     "footer_productos" ;
 }
 
-.header_productos{
-    grid-area: header_productos;
-    font-family: Nike;
-    background-color: #000000;
-    text-align: center;
-    padding: auto;
-    width: 1250px;
-}
-
 .productos_productos{
     grid-area: ropa1_productos;
     display: flex;
@@ -267,8 +253,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    height: 1150px;
-    width: 1250px;
 }
 
 .section_productos{
@@ -302,7 +286,6 @@ body{
     color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    width: 1250px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
@@ -373,15 +356,6 @@ body{
         "footer_nosotros";
 }
 
-.header_nosotros{
-    grid-area: header_nosotros;
-    font-family: Nike;
-    background-color: #000000;
-    text-align: center;
-    padding: auto;
-    width: 1250px;
-}
-
 .h1_nosotros{
     color: rgb(26, 127, 150);
     font-size: 60px;
@@ -397,11 +371,22 @@ body{
     width: 1489px;
 }
 
+.card1{
+    grid-area: nosotros_nosotros;
+    height: 30cm;
+    width: 1489px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+}
 .footer_nosotros{
+    grid-area: footer_nosotros;
     color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    width: 1250px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
@@ -464,22 +449,13 @@ body{
         "footer_unete";
 }
 
-.header_unete{
-    grid-area: header_unete;
-    font-family: Nike;
-    background-color: #000000;
-    text-align: center;
-    padding: auto;
-    width: 1250px;
-}
-
 .unete_unete{
     grid-area: unete_unete;
     background-image:url( https://resourcepacks24.de/storage/screenshots/461430-91163bac-be3d-45f9-a177-560fcec7f150.jpg);
     background-repeat: none;
     background-size: cover;
     height: 40cm;
-    width: 1489px;
+    width: 1550px;
 }
 
 .h1_unete{
@@ -493,10 +469,10 @@ body{
 }
 
 .footer_unete{
+    grid-area: footer_unete;
     color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    width: 1250px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
