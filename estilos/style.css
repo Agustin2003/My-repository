@@ -27,6 +27,7 @@
         "footer";
 }
 
+<<<<<<< HEAD
 header{
     grid-area: header;
     display: flex;
@@ -105,13 +106,16 @@ header div img{
     height: 170px;
     width: 200px;
 }
+=======
+>>>>>>> master
 
 .main1{
     grid-area: main;
     background-image:url( https://cdn.create.vista.com/api/media/medium/198498184/stock-photo-pink-purple-smoke-abstract-black?token=);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 1489px;
+    background-attachment: fixed;
+    background-position: center center;
 } 
 
 .titulodeimagen{
@@ -123,6 +127,7 @@ header div img{
     font-family: Letraanimada;
     color: white;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 20px 20px 20px 20px;
     border: 5px double white;
     margin: 10px 15cm 10px 15cm;
@@ -132,6 +137,8 @@ header div img{
     margin: 10px 13cm 10px 13cm;
 >>>>>>> master
     text-align: center;
+=======
+>>>>>>> master
 
 }
 
@@ -140,8 +147,6 @@ footer{
     color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
@@ -149,76 +154,68 @@ footer{
         rgb(0, 0, 0) 24%
       );
       transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 footer div{
-    margin: 1cm 1cm 1cm 2cm;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px 10px 15px;
     display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
 }
 
 #id{
     color: white;
     font-family: Letraanimada;
+    font-size: 15px;
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 700px) and (max-width: 768px){
 
-    header{
-        background-color: white;
-    }
-    nav ul li a{
-        color: rgb(0, 0, 0);
+    .main1{
+        grid-area: main;
+        background-image:url( https://cdn.create.vista.com/api/media/medium/198498184/stock-photo-pink-purple-smoke-abstract-black?token=);
+        background-repeat: none;
+        background-size: cover;
+    } 
+
+    .tituloindex{
+        font-family: Letraanimada;
+        color: white;
+        padding: 10px 1px 10px 13px;
+        border: 10px double white;
+        margin: 10px 1px 0px 0cm;
     }
 
-    footer{
-        background-color: white;
-        color: rgb(0, 0, 0);
-    }
-
-    #id{
-        color: rgb(0, 0, 0);
+    .card{
+        width: max-content;
     }
 
 }
 
-@media screen and (min-width: 768px){
-
-    header{
-        background-color: rgb(255, 0, 0);
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    footer div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 90px;
     }
-    nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    footer{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
-    }
-
-    #id{
-        color: rgb(234, 255, 0);
-    }
-
 }
 
 @media screen and (min-width: 1024px){
-
-    header{
-        background-color: rgb(0, 0, 0);
+    footer div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 150px;
     }
-    nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    footer{
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-    }
-
-    #id{
-        color: rgb(255, 255, 255);
-    }
-
 }
 
 /* config de Contacto*/
@@ -235,54 +232,15 @@ body{
         "footer_contacto";
 }
 
-.header_contactanos{
-    grid-area: header_contacto;
-    display: flex;
-    flex-direction: row;
-    font-family: Nike;
-    background-color: #000000;
-    height: 170px;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
-}
-
-.header_contactanos nav ul li{
-    grid-area: header_contacto;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_contactanos nav ul li:hover{
-    transform: scale(130%);
-}
-
-.header_contactanos nav ul li a{
-    grid-area: header_contacto;
-    color: white;
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-.header_contactanos ul li a:hover{
-    color: rgb(33, 27, 203);
-}
-
-.header_contactanos img{
-    grid-area: header_contacto;
-    height: 170px;
-    width: 200px;
-}
-
 .maincontacto{
     grid-area: contactanos_contacto;
     background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 1489px;
-    height: 1000px;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 1550px;
+    height: 700px;
 }
 
 .cuadrado{
@@ -294,11 +252,11 @@ body{
         rgba(0, 0, 0, 1) 12%,
         rgb(46, 46, 46) 24%
       );
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    bottom: 50%;
-    left: 600px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      margin: 1cm 1cm 1cm 3cm;
 }
 
 .section_contacto{
@@ -317,71 +275,57 @@ body{
 
 .footer_contacto{
     grid-area: footer_contacto;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    text-align: center;
     height: 6cm;
-    width: 1489px;
     background: radial-gradient(
         300% 200% at 50% 96%,
         rgb(137, 21, 253) 12%,
         rgb(0, 0, 0) 24%
       );
       transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 .footer_contacto div{
-    margin: 1cm 1cm 1cm 2cm;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px 10px 15px;
     display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
 }
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 700px) and (max-width: 768px){
 
-    .header_contactanos{
-        background-color: #ffffff;
-    }
-
-    .header_contactanos nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    .footer_contacto{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
-    }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
-    .header_contactanos{
-        background-color: rgb(255, 0, 0);
+    .footer_contacto div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 90px;
     }
 
-    .header_contactanos nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_contacto{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
-    }
 }
 
 @media screen and (min-width: 1024px){
 
-    .header_contactanos{
-        background-color: #000000;
+    .footer_contacto div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 150px;
     }
 
-    .header_contactanos nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    .footer_contacto{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
-    }
 }
 
 /* config de productos*/
@@ -394,50 +338,23 @@ body{
     "footer_productos" ;
 }
 
-.header_productos{
-    grid-area: header_productos;
-    font-family: Nike;
-    background-color: #000000;
-    height: 170px;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
-}
-
-.header_productos nav ul li{
-    grid-area: header_productos;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_productos nav ul li:hover{
-    transform: scale(130%);
-    color: rgb(33, 27, 203);
-}
-
-.header_productos nav ul li a{
-    grid-area: header_productos;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-.header_productos nav ul li a:hover{
-    color: rgb(33, 27, 203);
-}
-
 .productos_productos{
     grid-area: ropa1_productos;
     display: flex;
     flex-direction: column;
     background-image:url( https://cdn.create.vista.com/api/media/medium/198499840/stock-photo-creative-black-background-purple-smoke?token=);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 1150px;
-    width: 1489px;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.section_productos{
+    grid-area: ropa1_productos;
+}
+
+.row{
+    grid-area: ropa1_productos;
 }
 
 .titulo_ropa{
@@ -458,36 +375,11 @@ body{
     color: rgb(137, 21, 253);
 }
 
-.section_productos{
-    margin-top: 2cm;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.ropa1{
-    grid-area: ropa1_productos;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1cm 2cm 1cm 2cm;
-    display: block;
-    width: 250px;
-    height: 375px;
-    background-color: rgb(0, 0, 0);
-}
-
-.ropa1:hover{
-    transform: scale(130%);
-}
-
 .footer_productos{
     grid-area: footer_productos;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
@@ -495,61 +387,55 @@ body{
         rgb(0, 0, 0) 24%
       );
       transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 .footer_productos div{
-    grid-area: footer_productos;
-    margin: 1cm 1cm 1cm 2cm;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 10px 10px 15px;
     display: inline-block;
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
 }
 
 @media screen and (min-width: 767px){
 
-    .header_productos{
-        background-color: #ffffff;
-    }
-
-    .header_productos nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    .footer_productos{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
+    .footer_productos div{
+        justify-content: center;
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 15px;
+        margin-left: 20px;
     }
 
 }
 
 @media screen and (min-width: 768px){
 
-    .header_productos{
-        background-color: rgb(255, 0, 0);;
-    }
-
-    .header_productos nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_productos{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
+    .footer_productos div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 90px;
     }
 
 }
 
 @media screen and (min-width: 1024px){
 
-    .header_productos{
-        background-color: #000000;
-    }
-
-    .header_productos nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    .footer_productos{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
+    .footer_productos div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 150px;
     }
 
 }
@@ -564,44 +450,10 @@ body{
         "footer_nosotros";
 }
 
-.header_nosotros{
-    grid-area: header_nosotros;
-    font-family: Nike;
-    background-color: #000000;
-    height: 170px;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
-}
-
-.header_nosotros nav ul li{
-    grid-area: header_nosotros;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_nosotros nav ul li:hover{
-    transform: scale(130%);
-}
-
-.header_nosotros nav ul li a{
-    grid-area: header_nosotros;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-.header_nosotros nav ul li a:hover{
-    color: rgb(33, 27, 203);
-}
-
-.header_nosotros img{
-    grid-area: header_nosotros;
-    height: 170px;
-    width: 200px;
+.h1_nosotros{
+    color: rgb(26, 127, 150);
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .nosotros_nosotros{
@@ -613,20 +465,30 @@ body{
     width: 1489px;
 }
 
+.card1{
+    grid-area: nosotros_nosotros;
+    height: 30cm;
+    width: 1489px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+}
 .footer_nosotros{
     grid-area: footer_nosotros;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
-        rgba(128, 0, 247, 1) 12%,
+        rgb(137, 21, 253) 12%,
         rgb(0, 0, 0) 24%
       );
       transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 .footer_nosotros div{
@@ -636,49 +498,38 @@ body{
 
 @media screen and (min-width: 767px){
 
-    .header_nosotros{
-        background-color: #ffffff;
-    }
-
-    .header_nosotros nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    .footer_nosotros{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
+    .footer_nosotros div{
+        justify-content: center;
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 15px;
+        margin-left: 20px;
     }
 }
 
 @media screen and (min-width: 768px){
 
-    .header_nosotros{
-        background-color: rgb(255, 0, 0);
-    }
-
-    .header_nosotros nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_nosotros{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
+    .footer_nosotros div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 90px;
     }
 }
 
 @media screen and (min-width: 1024px){
 
-    .header_nosotros{
-        background-color: #000000;
-    }
-
-    .header_nosotros nav ul li a{
-        color: rgb(255, 255, 255);
-    }
-
-    .footer_nosotros{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
+    .footer_nosotros div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 150px;
     }
 }
 
@@ -692,69 +543,38 @@ body{
         "footer_unete";
 }
 
-.header_unete{
-    grid-area: header_unete;
-    font-family: Nike;
-    background-color: #000000;
-    height: 170px;
-    text-align: center;
-    padding: auto;
-    width: 1489px;
-}
-
-.header_unete nav ul li{
-    grid-area: header_unete;
-    list-style-type: none;
-    display: inline-block;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 30px;
-}
-
-.header_unete nav ul li:hover{
-    transform: scale(130%);
-}
-
-.header_unete nav ul li a{
-    grid-area: header_unete;
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    font-size: 1cm;
-}
-
-.header_unete nav ul li a:hover{
-    color: rgb(33, 27, 203);
-}
-
-.header_unete img{
-    grid-area: header_unete;
-    height: 170px;
-    width: 200px;
-}
-
 .unete_unete{
     grid-area: unete_unete;
     background-image:url( https://resourcepacks24.de/storage/screenshots/461430-91163bac-be3d-45f9-a177-560fcec7f150.jpg);
     background-repeat: none;
     background-size: cover;
-    height: 30cm;
-    width: 1489px;
+    height: 40cm;
+    width: 1550px;
+}
+
+.h1_unete{
+    color: rgb(1, 61, 104);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.col-xs-12_col-sm-12_col-md-6_col-lg-6{
+    margin-top: 1cm;
 }
 
 .footer_unete{
     grid-area: footer_unete;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #000000;
     font-family: Nike;
-    text-align: center;
-    width: 1489px;
     height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
-        rgba(128, 0, 247, 1) 12%,
+        rgb(137, 21, 253) 12%,
         rgb(0, 0, 0) 24%
       );
       transform: translate(0px, 0px);
+      font-size: 15px;
 }
 
 .footer_unete div{
@@ -764,48 +584,50 @@ body{
 
 @media screen and (min-width: 767px){
 
-    .header_unete{
-        background-color: #ffffff;
-    }
-
-    .header_unete nav ul li a{
-        color: rgb(0, 0, 0);
-    }
-
-    .footer_unete{
-        color: rgb(0, 0, 0);
-        background-color: #ffffff;
+    .footer_unete div{
+        justify-content: center;
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 15px;
+        margin-left: 20px;
     }
 }
 
 @media screen and (min-width: 628px){
 
-    .header_unete{
-        background-color: rgb(255, 0, 0);
-    }
-
-    .header_unete nav ul li a{
-        color: rgb(234, 255, 0);
-    }
-
-    .footer_unete{
-        background-color: rgb(255, 0, 0);
-        color: rgb(234, 255, 0);
+    .footer_unete div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 90px;
     }
 }
 
 @media screen and (min-width: 1024px){
 
-    .header_unete{
-        background-color: #000000;
+    .footer_unete div{
+        text-align: center;
+        margin: 10px 10px 10px 15px;
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+        margin-left: 150px;
     }
+}
 
-    .header_unete nav ul li a{
-        color: rgb(255, 255, 255);
-    }
+.progreso{
+    background-image:url( https://lh3.googleusercontent.com/w9A7Qzfyjsq0PutQWKkh7yQQxTxgnqmpLK-R_N0eUuVQZciUlgPkBRtVSJa8TdGxilPTHvJu8th87Awu0pNpdIygXqcsl9Bu2EYBbNA=w600);
+    background-repeat: none;
+    background-size: cover;
+    height: 1500px;
+    width: 1500px;
+}
 
-    .footer_unete{
-        color: rgb(255, 255, 255);
-        background-color: #000000;
-    }
+.h1_progreso{
+    font-size: 4cm;
+    color: white;
 }

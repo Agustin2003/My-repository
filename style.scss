@@ -1,24 +1,30 @@
 $colorbg: grey;
+$card-bg: rgb(0, 0, 0);
 
-.navbar ul li a:hover{
-    color: $colorbg;
+$thumbnail-border-color: rgb(122, 27, 255);
+$thumbnail-border-width: 10px;
+
+.img-thumbnail{
+    border-color: $thumbnail-border-color;
+    border-width: $thumbnail-border-width;
+    margin-top: 20px;
 }
 
-.header_contactanos nav ul li a:hover{
-    color: $colorbg;
+@mixin fontstyle($color) {
+    color: blue;
+    background-color: $color;
 }
 
-.header_productos  nav ul li a:hover{
-    color: $colorbg;
+.tituloindex {
+    @include fontstyle(rgba(128, 128, 128, 0));
 }
 
-.header_nosotros nav ul li a:hover{
-    color: $colorbg;
+.card {
+    background-color: $card-bg;
 }
 
-.header_unete nav ul li a:hover{
-    color: $colorbg;
+.card-contenedor {
+    align-content: center;
 }
-
 
 
