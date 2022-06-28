@@ -263,7 +263,7 @@ body{
 
 @media screen and (min-width: 1px){
 
-    .card1 {
+    .card1 p {
         display: none;
     }
 
