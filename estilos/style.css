@@ -229,7 +229,7 @@ body{
     background-image:url( https://conteudo.imguol.com.br/c/esporte/cf/2022/01/17/sede-global-da-nike-em-beaverton-em-oregon-nos-estados-unidos-1642455392796_v2_4x3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: solid;
+    background-attachment: fixed;
     background-position: center center;
 }
 
@@ -292,10 +292,11 @@ body{
 .unete_unete{
     grid-area: unete_unete;
     background-image:url( https://resourcepacks24.de/storage/screenshots/461430-91163bac-be3d-45f9-a177-560fcec7f150.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 40cm;
-    width: 1550px;
+    background-attachment: fixed;
+    background-position: center center;
+
 }
 
 .h1_unete{
@@ -304,9 +305,6 @@ body{
     font-weight: bold;
 }
 
-.col-xs-12_col-sm-12_col-md-6_col-lg-6{
-    margin-top: 1cm;
-}
 
 .footer_unete{
     grid-area: footer_unete;
@@ -319,6 +317,28 @@ body{
       );
       transform: translate(0px, 0px);
       font-size: 15px;
+}
+
+@media screen and (min-width: 1px){
+
+    .card1 p {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .card1 p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .card1 p {
+        display:contents;
+    }
 }
 
 .progreso{
