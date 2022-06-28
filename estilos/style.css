@@ -300,6 +300,7 @@ body{
 }
 
 .h1_unete{
+    grid-area: unete_unete;
     color: rgb(1, 61, 104);
     font-size: 50px;
     font-weight: bold;
@@ -319,34 +320,12 @@ body{
       font-size: 15px;
 }
 
-@media screen and (min-width: 1px){
-
-    .card1 p {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-    .card1 p {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1024px){
-
-    .card1 p {
-        display:contents;
-    }
-}
-
 .progreso{
     background-image:url( https://lh3.googleusercontent.com/w9A7Qzfyjsq0PutQWKkh7yQQxTxgnqmpLK-R_N0eUuVQZciUlgPkBRtVSJa8TdGxilPTHvJu8th87Awu0pNpdIygXqcsl9Bu2EYBbNA=w600);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 1500px;
-    width: 1500px;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .h1_progreso{
