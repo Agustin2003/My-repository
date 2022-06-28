@@ -47,13 +47,27 @@
     color: white;
 
 }
+.card2 h2{
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: bold;
+}
+.card2 h5{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.card2 p{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
 
 footer{
     grid-area: footer;
     color: rgb(255, 255, 255);
-    background-color: #000000;
     font-family: Nike;
-    height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
         rgb(137, 21, 253) 12%,
@@ -63,71 +77,14 @@ footer{
       font-size: 15px;
 }
 
-footer div{
-    justify-content: center;
-    text-align: center;
-    margin: 10px 10px 10px 15px;
-    display: inline-block;
-    color: white;
-    font-size: 15px;
-    margin-left: 20px;
-}
-
-#id{
-    color: white;
-    font-family: Letraanimada;
-    font-size: 15px;
-}
-
-@media screen and (min-width: 700px) and (max-width: 768px){
-
-    .main1{
-        grid-area: main;
-        background-image:url( https://cdn.create.vista.com/api/media/medium/198498184/stock-photo-pink-purple-smoke-abstract-black?token=);
-        background-repeat: none;
-        background-size: cover;
-    } 
-
-    .tituloindex{
-        font-family: Letraanimada;
-        color: white;
-        padding: 10px 1px 10px 13px;
-        border: 10px double white;
-        margin: 10px 1px 0px 0cm;
-    }
-
-    .card{
-        width: max-content;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    footer div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 90px;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    footer div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 150px;
-    }
-}
-
 /* config de Contacto*/
 
 body{
     background-color: black;
+}
+
+.header_contactanos{
+    grid-area: header_contacto;
 }
 
 .grilla_contacto{
@@ -145,8 +102,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
-    width: 1550px;
-    height: 700px;
 }
 
 .cuadrado{
@@ -182,9 +137,7 @@ body{
 .footer_contacto{
     grid-area: footer_contacto;
     color: rgb(255, 255, 255);
-    background-color: #000000;
     font-family: Nike;
-    height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
         rgb(137, 21, 253) 12%,
@@ -192,46 +145,6 @@ body{
       );
       transform: translate(0px, 0px);
       font-size: 15px;
-}
-
-.footer_contacto div{
-    justify-content: center;
-    text-align: center;
-    margin: 10px 10px 10px 15px;
-    display: inline-block;
-    color: white;
-    font-size: 15px;
-    margin-left: 20px;
-}
-
-@media screen and (min-width: 700px) and (max-width: 768px){
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
-    .footer_contacto div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 90px;
-    }
-
-}
-
-@media screen and (min-width: 1024px){
-
-    .footer_contacto div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 150px;
-    }
-
 }
 
 /* config de productos*/
@@ -284,9 +197,7 @@ body{
 .footer_productos{
     grid-area: footer_productos;
     color: rgb(255, 255, 255);
-    background-color: #000000;
     font-family: Nike;
-    height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
         rgb(137, 21, 253) 12%,
@@ -294,56 +205,6 @@ body{
       );
       transform: translate(0px, 0px);
       font-size: 15px;
-}
-
-.footer_productos div{
-    justify-content: center;
-    text-align: center;
-    margin: 10px 10px 10px 15px;
-    display: inline-block;
-    color: white;
-    font-size: 15px;
-    margin-left: 20px;
-}
-
-@media screen and (min-width: 767px){
-
-    .footer_productos div{
-        justify-content: center;
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 15px;
-        margin-left: 20px;
-    }
-
-}
-
-@media screen and (min-width: 768px){
-
-    .footer_productos div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 90px;
-    }
-
-}
-
-@media screen and (min-width: 1024px){
-
-    .footer_productos div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 150px;
-    }
-
 }
 
 /* config de nosotros*/
@@ -357,6 +218,7 @@ body{
 }
 
 .h1_nosotros{
+    grid-area: nosotros_nosotros;
     color: rgb(26, 127, 150);
     font-size: 60px;
     font-weight: bold;
@@ -365,29 +227,26 @@ body{
 .nosotros_nosotros{
     grid-area: nosotros_nosotros;
     background-image:url( https://conteudo.imguol.com.br/c/esporte/cf/2022/01/17/sede-global-da-nike-em-beaverton-em-oregon-nos-estados-unidos-1642455392796_v2_4x3.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 30cm;
-    width: 1489px;
+    background-attachment: solid;
+    background-position: center center;
 }
 
-.card1{
+.card1 {
     grid-area: nosotros_nosotros;
-    height: 30cm;
-    width: 1489px;
 }
 
-p{
+.card1 p{
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
+
 .footer_nosotros{
     grid-area: footer_nosotros;
     color: rgb(255, 255, 255);
-    background-color: #000000;
     font-family: Nike;
-    height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
         rgb(137, 21, 253) 12%,
@@ -397,45 +256,26 @@ p{
       font-size: 15px;
 }
 
-.footer_nosotros div{
-    margin: 1cm 1cm 1cm 2cm;
-    display: inline-block;
-}
 
 @media screen and (min-width: 767px){
 
-    .footer_nosotros div{
-        justify-content: center;
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 15px;
-        margin-left: 20px;
+    .card1 p {
+        display: none;
     }
+
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
 
-    .footer_nosotros div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 90px;
+    .card1 p {
+        display: none;
     }
 }
 
 @media screen and (min-width: 1024px){
 
-    .footer_nosotros div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 150px;
+    .card1 p {
+        display:contents;
     }
 }
 
@@ -471,9 +311,7 @@ p{
 .footer_unete{
     grid-area: footer_unete;
     color: rgb(255, 255, 255);
-    background-color: #000000;
     font-family: Nike;
-    height: 6cm;
     background: radial-gradient(
         300% 200% at 50% 96%,
         rgb(137, 21, 253) 12%,
@@ -481,48 +319,6 @@ p{
       );
       transform: translate(0px, 0px);
       font-size: 15px;
-}
-
-.footer_unete div{
-    margin: 1cm 1cm 1cm 2cm;
-    display: inline-block;
-}
-
-@media screen and (min-width: 767px){
-
-    .footer_unete div{
-        justify-content: center;
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 15px;
-        margin-left: 20px;
-    }
-}
-
-@media screen and (min-width: 628px){
-
-    .footer_unete div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 90px;
-    }
-}
-
-@media screen and (min-width: 1024px){
-
-    .footer_unete div{
-        text-align: center;
-        margin: 10px 10px 10px 15px;
-        display: inline-block;
-        color: white;
-        font-size: 30px;
-        margin-left: 150px;
-    }
 }
 
 .progreso{
