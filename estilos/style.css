@@ -217,6 +217,10 @@ body{
         "footer_nosotros";
 }
 
+.header_nosotros{
+    grid-area: header_nosotros;
+}
+
 .h1_nosotros{
     grid-area: nosotros_nosotros;
     color: rgb(26, 127, 150);
@@ -254,29 +258,6 @@ body{
       );
       transform: translate(0px, 0px);
       font-size: 15px;
-}
-
-
-@media screen and (min-width: 1px){
-
-    .card1 p {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-
-    .card1 p {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1024px){
-
-    .card1 p {
-        display:contents;
-    }
 }
 
 /* config de unete a nosotros*/
@@ -332,3 +313,54 @@ body{
     font-size: 4cm;
     color: white;
 }
+
+ul.socialIcons {
+    padding: 0;
+    text-align: center;
+  }
+
+  .socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    display: inline-block;
+    border-radius: 2em;
+    overflow: hidden;
+ }
+
+  .socialIcons li a {
+    display: block;
+    padding: 1.5em;
+    min-width: 1.28571429em;
+    max-width: 1.28571429em;
+    height: 1.28571429em;
+    white-space: nowrap;
+    line-height: 1.5em; 
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+  }
+
+  .socialIcons li i {
+    margin-right: 0.5em;
+  }
+
+  .socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 2em;
+  }
+
+  .socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+  }
+
+  .socialIcons .twitter {
+    background-color: #00aced;
+    box-shadow: 0 0 16px #00aced;
+  }
+
+  .socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+  }
