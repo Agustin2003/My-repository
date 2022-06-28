@@ -260,6 +260,29 @@ body{
       font-size: 15px;
 }
 
+
+@media screen and (min-width: 1px){
+
+    .celu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .card1 p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .card1 p {
+        display:contents;
+    }
+}
+
 /* config de unete a nosotros*/
 
 .grilla_unete{
@@ -314,15 +337,11 @@ body{
     color: white;
 }
 
-ul.socialIcons {
-    padding: 0;
-    text-align: center;
-  }
-
-  .socialIcons li {
+.socialIcons li {
     background-color: yellow;
     list-style: none;
     display: inline-block;
+    margin: 4px;
     border-radius: 2em;
     overflow: hidden;
  }
