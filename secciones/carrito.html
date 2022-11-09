@@ -75,25 +75,113 @@
     
         <main class="productos_productos">
 
-            <div class="titulo_ropa">
-                <h1 class="h1_ropa">NUESTROS PODUCTOS!</h1>
+          <button id="mostrar_carrito">Carrito</button>
+          <div id="contenedorPadre">      
+            <div class="container" id="listaProductos">
+             
+              <h2>Productos</h2>
+              <div class="row">
+                <div class="col">
+                  <div class="card" style="width: 90%;">
+                      <img src="../productos/remeranegra.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Remera Negra</h5>
+                        <p class="card-text"></p>
+                        <span class="precio">50$</span>  
+                        <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                      </div>
+                    </div>
+              </div>
+                  <div class="col">
+                      <div class="card" style="width: 90%;">
+                          <img src="../productos/pantalonblanco.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Pantalon Blanco</h5>
+                            <p class="card-text"></p>
+                            <span class="precio">100$</span>  
+                            <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="card" style="width: 90%;">
+                          <img src="../productos/pantalonnegro.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Pantalon Negro</h5>
+                            <p class="card-text"></p>
+                            <span class="precio">100$</span>  
+                            <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                          </div>
+                      </div>
+                  </div>      
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <div class="card" style="width: 90%;">
+                      <img src="../productos/zapatillanegra.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Zapatillas Negras</h5>
+                        <p class="card-text"></p>
+                        <span class="precio">80$</span>                  
+                        <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                      </div>
+                    </div>
+              </div>
+                  <div class="col">
+                      <div class="card" style="width: 90%;">
+                          <img src="../productos/campverde.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Campera Verde</h5>
+                            <p class="card-text"></p>
+                            <span class="precio">130$</span>                      
+                            <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                      <div class="card" style="width: 90%;">
+                          <img src="../productos/campnaranja.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Campera Naranja</h5>
+                            <p class="card-text"></p>
+                            <span class="precio">130$</span>  
+                            <a href="#" class="btn btn-primary botonCompra">Comprar</a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <br><br><br>
+                  
+      
+      
+      
+              </div>
             </div>
-
-            <section class="section_productos" data-aos="zoom-in-down">
-
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4"><a href="../secciones/progreso.html"><img src="../img/buzos.jpg" class="img-thumbnail" alt="Buzos" ></a></div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4"><a href="../secciones/progreso.html"><img src="../img/zapas.jpg" class="img-thumbnail" alt="Zapas" ></a></div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4"><a href="../secciones/progreso.html"><img src="../img//remeras.jpg" class="img-thumbnail" alt="Remeras"></a></div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4"><a href="../secciones/progreso.html"><img src="../img/pantalones.jpg" class="img-thumbnail" alt="Pantalones"></a></div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4"><a href="../secciones/progreso.html"><img src="../img/traje.png" class="img-thumbnail" alt="Trajes de baño" ></a></div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4"><a href="../secciones/progreso.html"><img src="../img/camperas.jpg" class="img-thumbnail"  alt="Camperas" ></a></div>
-                </div>
+            <div class="container" id="carrito">
+              <h2>Carrito</h2>
+              <br>
+              <table class="table table-dark">
+                <thead>
+                  <tr>             
+                    <td>Producto</td>
+                    <td>Cantidad</td>
+                    <td>Precio</td>
+                    <td><button type="button" id="comprar" class="btn btn-success comprar">Comprar</button></td>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
                 
-            </section>
+                </tbody>
+              </table>
+      
+            </div>
+            <br><br><br>
+          </div>
+         
 
         </main>
-    
+
         <footer class="footer_productos">
           
           <div class="container">
@@ -127,11 +215,16 @@
                   <h4>encuentran disponibles</h4>
                   <h4>desde las 9 am hasta las 5 pm</h4>
                   <h4>en la hora local de tu pais</h4>
+                  <div id="clima">
+
+                  </div>
               </div>
               </div>
             </div>
 
         </footer>
+
+        <script src="../pruebajs/carrito.js"></script>
 
     </div>
 
@@ -141,5 +234,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>

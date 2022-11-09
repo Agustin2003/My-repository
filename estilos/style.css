@@ -147,6 +147,91 @@ body{
       font-size: 15px;
 }
 
+/* config de Contacto*/
+
+body{
+    background-color: black;
+}
+
+.header_contactanos2{
+    grid-area: header_contacto;
+}
+
+.grilla_contacto2{
+    display: grid;
+    grid-template-areas: 
+        "header_contacto" 
+        "contactanos_contacto" 
+        "footer_contacto";
+}
+
+.maincontacto2{
+    grid-area: contactanos_contacto;
+    background-image:url( https://i0.wp.com/thesolehouse.com/wp-content/uploads/2022/02/air-max-90-bacpn.jpg?fit=1000%2C600&ssl=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.cuadrado{
+    grid-area: contactanos_contacto;
+    width: 310px;
+    height: 500px;
+    background: radial-gradient(
+        500% 170% at 50% 93%,
+        rgba(0, 0, 0, 1) 12%,
+        rgb(46, 46, 46) 24%
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      margin: 1cm 1cm 1cm 3cm;
+}
+
+.texto1{
+    font-size: 0.65cm;
+}
+
+#botonashe{
+    background-color: black;
+    border: 10px, solid,white;
+
+}
+
+.section_contacto2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.section_contacto2 .h1_contacto{
+    border: 2px dashed white;
+    padding-left: 40px;
+    color: white;
+
+}
+
+.footer_contacto2{
+    grid-area: footer_contacto;
+    color: rgb(255, 255, 255);
+    font-family: Nike;
+    background: radial-gradient(
+        300% 200% at 50% 96%,
+        rgb(137, 21, 253) 12%,
+        rgb(0, 0, 0) 24%
+      );
+      transform: translate(0px, 0px);
+      font-size: 15px;
+}
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  }
+
+  
 /* config de productos*/
 
 .grilla_productos{
@@ -382,4 +467,20 @@ body{
   .socialIcons .instagram {
     background-color: #cd486b;
     box-shadow: 0 0 16px #cd486b;
+  }
+
+  h5{
+    color: white;
+  }
+
+  .precio{
+    color: white;
+  }
+
+  h2{
+    color: white;
+  }
+
+  #clima{
+    color: black;
   }
