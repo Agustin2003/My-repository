@@ -275,8 +275,8 @@ agregar_carrito
 
         var numeros = [3,6,67,6,23,11,100,8,93,0,17,24,7,2,33,45,28,33,23,12,99,100];
 
-        var min = numeros[50];
-        var max = numeros[50];
+        var min = numeros[0];
+        var max = numeros[0];
         
         numeros.forEach(numero => {
             if(numero<min){
@@ -292,8 +292,9 @@ agregar_carrito
     
         })
 
-        console.log(max)
-        console.log(min)
+        let minmax = [min, max]
+
+        console.log(minmax)
     
     
 
