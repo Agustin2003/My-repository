@@ -113,7 +113,6 @@ btn.addEventListener ("click", () => {
 /* Arrays y objetos*/
 const ropa = ["Buzos", "Camperas", "Zapatillas", "Pantalones", "Remeras", "TrajesDeBaño"];
 
-console.log (ropa.isuniform)
 
 const producto1 = {
     id: 1,
@@ -270,31 +269,8 @@ agregar_carrito
         })
         .finally(function(){
             console.log("Promesa terminada");
-        });
-
-
-        var numeros = [3,6,67,6,23,11,100,8,93,0,17,24,7,2,33,45,28,33,23,12,99,100];
-
-        var min = numeros[0];
-        var max = numeros[0];
-        
-        numeros.forEach(numero => {
-            if(numero<min){
-                (min=numero)
-             }
-
-            })
-        
-        numeros.forEach(numero => {
-            if(numero>max){
-                (max=numero)
-             };
-    
         })
-
-        let minmax = [min, max]
-
-        console.log(minmax)
+    
     
     
 
